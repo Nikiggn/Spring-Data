@@ -1,4 +1,4 @@
 package bg.softuni.gamestore.service;
 
-public class s {
+public interface GameService {
 }
