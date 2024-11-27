@@ -4,5 +4,9 @@ import java.io.IOException;
 
 public interface ProductService {
     void seedProducts() throws IOException;
-    void areProductsImported();
+    boolean areProductsImported();
+
+    void exportProductsInRange() throws IOException;
+
+    void exportSuccessfullySoldProducts();
 }

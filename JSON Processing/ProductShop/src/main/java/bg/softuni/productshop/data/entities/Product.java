@@ -17,11 +17,11 @@ public class Product extends BaseEntity {
     private BigDecimal price;
 
     @ManyToOne
-    @JoinColumn(name = "buyer_id",referencedColumnName = "id")
+    @JoinColumn(name = "buyer_id", referencedColumnName = "id")
     private User buyer;
 
     @ManyToOne
-    @JoinColumn(name = "seller_id",referencedColumnName = "id")
+    @JoinColumn(name = "seller_id", referencedColumnName = "id")
     private User seller;
 
     @ManyToMany(fetch = FetchType.EAGER)
@@ -30,7 +30,8 @@ public class Product extends BaseEntity {
             inverseJoinColumns = @JoinColumn(name = "category_id", referencedColumnName = "id"))
     private Set<Category> categories;
 
-    public Product() {}
+    public Product() {
+    }
 
     public Product(String name, BigDecimal price, User buyer, User seller) {
         this.name = name;

@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 
 @Repository
 public class CategoryServiceImpl implements CategoryService {
-    private static final String JSON_PATH = "src/main/resources/files/categories.json";
+    private static final String JSON_PATH = "src/main/resources/json/categories.json";
 
     private final CategoryRepository categoryRepository;
     private final ModelMapper modelMapper;

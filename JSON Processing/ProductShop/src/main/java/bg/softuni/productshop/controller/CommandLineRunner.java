@@ -27,7 +27,10 @@ public class CommandLineRunner implements org.springframework.boot.CommandLineRu
     public void run(String... args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        seedData();
+        //seedData();
+
+        // this.productService.exportProductsInRange();
+        this.productService.exportSuccessfullySoldProducts();
     }
 
     private void seedData() throws IOException {
@@ -37,6 +40,10 @@ public class CommandLineRunner implements org.springframework.boot.CommandLineRu
 
         if (!this.categoryService.areCategoriesImported()){
             this.categoryService.seedCategories();
+        }
+
+        if (!this.productService.areProductsImported()){
+            this.productService.seedProducts();
         }
     }
 }
