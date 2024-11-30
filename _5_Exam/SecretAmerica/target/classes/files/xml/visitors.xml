@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<visitors>
+    <visitor>
+        <first_name>John</first_name>
+        <last_name>Smith</last_name>
+        <attraction_id>12</attraction_id>
+        <country_id>73</country_id>
+        <personal_data_id>61</personal_data_id>
+    </visitor>
+    <visitor>
+        <first_name>Smith</first_name>
+        <last_name>Johnson</last_name>
+        <attraction_id>10</attraction_id>
+        <country_id>83</country_id>
+        <personal_data_id>61</personal_data_id>
+    </visitor>
+</visitors>
